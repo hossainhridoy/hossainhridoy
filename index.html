@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Hossain Hridoy | Animation YouTuber</title>
+<meta charset="UTF-8">
+<title>Hossain Hridoy | Animation YouTuber & Digital Creator</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Hossain Hridoy is an animation YouTuber, digital creator, and founder of Lembux Group from Bangladesh." />
-<meta name="keywords" content="Hossain Hridoy, Hridoy, হৃদয়, Animation YouTuber, Digital Creator, Lembux Group" />
-<meta name="author" content="Hossain Hridoy" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hossain Hridoy is an animation YouTuber, digital creator, and founder of Lembux Group from Bangladesh.">
+<meta name="keywords" content="Hossain Hridoy, Hridoy, হৃদয়, Animation YouTuber, Digital Creator, Lembux Group">
+<meta name="author" content="Hossain Hridoy">
 
-<!-- Google / AI Person Schema -->
+<!-- AI / Google Person Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,12 +27,12 @@
 
 <style>
 :root{
-  --primary:#7c3aed;
-  --secondary:#22d3ee;
-  --bg:#05050a;
-  --glass:rgba(255,255,255,0.08);
+  --lemon:#baff00;
+  --green:#17bb86;
+  --dark:#041b11;
+  --card:rgba(255,255,255,0.08);
   --border:rgba(255,255,255,0.18);
-  --text:#f5f5f5;
+  --text:#ecfdf5;
 }
 
 *{box-sizing:border-box;}
@@ -40,162 +40,121 @@
 body{
   margin:0;
   font-family: "Segoe UI", system-ui, sans-serif;
-  background: radial-gradient(circle at top, #0b0b22, #05050a);
+  background:
+    radial-gradient(circle at top, #0b3d24, #041b11);
   color:var(--text);
-  overflow-x:hidden;
 }
 
-.container{
-  max-width:1100px;
+/* LAYOUT */
+.wrapper{
+  max-width:1000px;
   margin:auto;
-  padding:60px 20px;
+  padding:50px 18px;
 }
 
-/* HERO */
-.hero{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:40px;
-  align-items:center;
+/* PROFILE TOP */
+.profile{
+  text-align:center;
+  margin-bottom:50px;
+  animation:fadeDown 1s ease;
 }
-
-.hero-card{
-  background:linear-gradient(135deg, var(--glass), transparent);
-  border:1px solid var(--border);
-  backdrop-filter: blur(14px);
-  border-radius:24px;
-  padding:40px;
-  animation:fadeUp 1s ease;
+.profile img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid var(--lemon);
+  box-shadow:0 0 50px rgba(186,255,0,.5);
 }
-
-.hero h1{
-  font-size:42px;
-  margin:0;
-  background:linear-gradient(90deg,var(--primary),var(--secondary));
+.profile h1{
+  margin:18px 0 6px;
+  font-size:38px;
+  background:linear-gradient(90deg,var(--lemon),var(--green));
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
-.tagline{
-  margin:15px 0;
-  color:#cbd5f5;
-  font-size:16px;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 22px;
-  border-radius:30px;
-  background:linear-gradient(90deg,var(--primary),var(--secondary));
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-  box-shadow:0 10px 30px rgba(124,58,237,.4);
-  transition:.3s;
-}
-.btn:hover{transform:translateY(-3px);}
-
-.hero-img{
-  text-align:center;
-  animation:float 4s ease-in-out infinite;
-}
-.hero-img img{
-  width:260px;
-  height:260px;
-  border-radius:50%;
-  object-fit:cover;
-  border:4px solid var(--primary);
-  box-shadow:0 0 60px rgba(124,58,237,.6);
+.profile p{
+  color:#c7f9e9;
+  font-size:15px;
 }
 
 /* SECTIONS */
 .section{
-  margin-top:80px;
+  margin-bottom:45px;
   animation:fadeUp 1s ease;
 }
 .section h2{
-  font-size:28px;
-  margin-bottom:20px;
-  border-left:5px solid var(--primary);
-  padding-left:12px;
+  font-size:22px;
+  margin-bottom:15px;
+  border-left:5px solid var(--lemon);
+  padding-left:10px;
 }
 
 .card{
-  background:var(--glass);
+  background:var(--card);
   border:1px solid var(--border);
-  border-radius:20px;
-  padding:25px;
-  backdrop-filter:blur(12px);
+  border-radius:18px;
+  padding:22px;
+  backdrop-filter:blur(14px);
 }
 
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+  gap:16px;
 }
 
-ul{
-  padding-left:18px;
+/* CONTACT */
+.contact li{
+  margin-bottom:8px;
 }
-li{margin-bottom:8px;}
 
+/* FOOTER */
 .footer{
   text-align:center;
-  margin-top:100px;
-  color:#9ca3af;
+  margin-top:60px;
   font-size:14px;
+  color:#a7f3d0;
 }
 
 /* ANIMATIONS */
 @keyframes fadeUp{
-  from{opacity:0; transform:translateY(40px);}
+  from{opacity:0; transform:translateY(30px);}
   to{opacity:1; transform:none;}
 }
-@keyframes float{
-  0%,100%{transform:translateY(0);}
-  50%{transform:translateY(-15px);}
+@keyframes fadeDown{
+  from{opacity:0; transform:translateY(-30px);}
+  to{opacity:1; transform:none;}
 }
 
 /* MOBILE */
-@media(max-width:800px){
-  .hero{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
+@media(max-width:600px){
+  .profile h1{font-size:30px;}
+  .profile img{width:140px;height:140px;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="wrapper">
 
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-card">
-      <h1>Hossain Hridoy</h1>
-      <div class="tagline">
-        Animation YouTuber • Digital Creator • Founder of Lembux Group
-      </div>
-      <p>
-        A teenage animation creator from Bangladesh, focused on storytelling,
-        creativity, and modern digital expression.
-      </p>
-      <a href="https://lembux.pages.dev" class="btn">Explore Lembux Group</a>
-    </div>
-
-    <div class="hero-img">
-      <img src="https://i.ibb.co.com/dsnwchs0/In-Shot-20251225-112329227.jpg" alt="Hossain Hridoy">
-    </div>
+  <!-- PROFILE -->
+  <div class="profile">
+    <img src="https://i.ibb.co.com/dsnwchs0/In-Shot-20251225-112329227.jpg" alt="Hossain Hridoy">
+    <h1>Hossain Hridoy</h1>
+    <p>
+      Animation YouTuber • Digital Creator • Founder of Lembux Group
+    </p>
   </div>
 
   <!-- ABOUT -->
   <div class="section">
     <h2>About</h2>
     <div class="card">
-      Hossain Hridoy is a 16-year-old animation YouTuber and digital creator.
-      He creates animation-based content and believes in simplicity,
+      Hossain Hridoy is a teenage animation YouTuber and digital creator from Bangladesh.
+      He focuses on animation-based storytelling and believes in simplicity,
       consistency, and continuous learning.
     </div>
   </div>
@@ -231,6 +190,18 @@ li{margin-bottom:8px;}
     </div>
   </div>
 
+  <!-- CONTACT -->
+  <div class="section">
+    <h2>Contact</h2>
+    <div class="card">
+      <ul class="contact">
+        <li>Email: hossain.hridoy@hotmail.com</li>
+        <li>Telegram: 01953561473</li>
+        <li>Imo: 01953561473</li>
+      </ul>
+    </div>
+  </div>
+
   <div class="footer">
     © Hossain Hridoy — Official Online Identity
   </div>
@@ -238,4 +209,4 @@ li{margin-bottom:8px;}
 </div>
 
 </body>
-    </html>
+</html>
