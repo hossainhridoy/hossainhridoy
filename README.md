@@ -25,7 +25,7 @@
 ---
 
 ### 📌 Featured Projects
-- 🔴 **hridoystream**  
+- 🔴 **hridoytv**  
   Live TV streaming & M3U8 based project  
 
 - 🟢 **hridoytv-premium**  
